@@ -92,7 +92,7 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 
 | 链接      | 引用                                                         | 备注 |
 | --------- | ------------------------------------------------------------ | ---- |
-| [4.2.1]() | Taguchi, S., Koide, S., Yoshimura, T.: Online map matching with route prediction. IEEE Transactions on Intelligent Transportation Systems 20(1), 338–347 (2018) |      |
+| [4.2.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/Online_Map_Matching_With_Route_Prediction.pdf) | Taguchi, S., Koide, S., Yoshimura, T.: Online map matching with route prediction. IEEE Transactions on Intelligent Transportation Systems 20(1), 338–347 (2018) |      |
 
 ### 评价模型（Scoring Model）
 
