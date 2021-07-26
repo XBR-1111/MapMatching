@@ -115,6 +115,6 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 | 命名    | paper链接                                                    | 数据集链接                                                   |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Seattle | [3.1.3](https://github.com/XBR-1111/MapMatching/blob/master/paper/Hidden%20Markov%20Map%20Matching%20.pdf) | [Seattle data](https://www.microsoft.com/en-us/research/publication/hidden-markov-map-matching-noise-sparseness/) |
-| Global  |                                                              | [Global data](https://zenodo.org/record/57731#.YP55K8TitnI)  |
+| Global  |  [Global paper](https://github.com/XBR-1111/MapMatching/blob/master/paper/Dataset_for_testing_and_training_of_map-matching_algorithms.pdf)                                                            | [Global data](https://zenodo.org/record/57731#.YP55K8TitnI)  |
 |         |                                                              |                                                              |
 
