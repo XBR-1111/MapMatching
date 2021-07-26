@@ -47,13 +47,13 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 | --------- | ------------------------------------------------------------ | --------------------------------------------------- |
 | [2.1.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/An%20introduction%20to%20map%20matching%20for%20personal%20navigation%20assistants.pdf) | Bernstein D, Kornhauser A. An introduction to map matching for personal navigation assistants. Geometric Distributions, 1996,  122(7):1082−1083. | point-to-point，point-to-curve and curve-to-curve   |
 | [2.1.2](https://github.com/XBR-1111/MapMatching/blob/master/paper/Some%20map%20matching%20algorithms%20for%20personal%20navigation.pdf) | White, Christopher E., David Bernstein, and Alain L. Kornhauser. "Some map matching algorithms for personal navigation assistants." *Transportation research part c: emerging technologies* 8.1-6 (2000): 91-108. | point-to-curve and curve-to-curve，实验比较四个算法 |
-| [2.1.3]() | Wei, H., Wang, Y., Forman, G., Zhu, Y.: Map matching by frechet distance and global weight optimization. Technical Paper, Departement of Computer Science and Engineering p. 19 (2013) | 弗朗明歇距离                                        |
+| [2.1.3](https://github.com/XBR-1111/MapMatching/blob/master/paper/Map%20matching%20by%20frechet%20distance%20and%20global%20weight%20optimization.pdf) | Wei, H., Wang, Y., Forman, G., Zhu, Y.: Map matching by frechet distance and global weight optimization. Technical Paper, Departement of Computer Science and Engineering p. 19 (2013) | 弗朗明歇距离                                        |
 
 #### 基于模式（Pattern-based）
 
 | 链接      | 引用                                                         | 备注                     |
 | --------- | ------------------------------------------------------------ | ------------------------ |
-| [2.2.1]() | Zheng, K., Zheng, Y., Xie, X., Zhou, X.: Reducing uncertainty of low-sampling-rate trajectories. In: 2012 IEEE 28th International Conference on Data Engineering. pp. 1144–1155. IEEE (2012) | 从历史数据学习轨迹的模式 |
+| [2.2.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/Reducing_Uncertainty_of_Low-Sampling-Rate_Trajectories.pdf) | Zheng, K., Zheng, Y., Xie, X., Zhou, X.: Reducing uncertainty of low-sampling-rate trajectories. In: 2012 IEEE 28th International Conference on Data Engineering. pp. 1144–1155. IEEE (2012) | 从历史数据学习轨迹的模式 |
 
 ### 状态转移模型（State-Transition Model）
 
@@ -66,7 +66,7 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 | [3.1.3](https://github.com/XBR-1111/MapMatching/blob/master/paper/Hidden%20Markov%20Map%20Matching%20.pdf) | Newson P, Krumm J. Hidden Markov map matching through noise and sparseness. In: Proc. of the ACM-GIS. 2009.  336−343. [doi: 10.1145/1653771.1653818] | HMMM算法，状态转移矩阵与前两个不同，且给出了参数的经验值。包含了一个公开数据集 |
 | [3.1.4](https://github.com/XBR-1111/MapMatching/blob/master/paper/Development%20of%20map%20matching%20algorithm%20for%20low%20frequency%20probe%20data.pdf) | Miwa T, Kiuchi D, Yamamoto T, Morikawaet T. Development of map matching algorithm for low frequency probe data.  Transportation Research Part C: Emerging Technologies, 2012,22(5):132−145. [doi: 10.1016/j.trc.2012.01.005] | Simplified HMM算法，速度快，性能略差于变种HMM                |
 | [3.1.5](https://github.com/XBR-1111/MapMatching/blob/master/paper/Accurate%20real-time%20map%20matching%20for%20challenging%20environments.pdf) | Mohamed R, Aly H, Youssef M. Accurate real-time map matching for challenging environments. IEEE Trans. on Intelligent  Transportation Systems, 2017,18(4):847−857. [doi: 10.1109/TITS.2016.2591958] | OHMM算法，在线算法/增量算法                                  |
-| [3.1.6]() | Song R, Lu W, Sun W, Huang W, Chen C. Quick map matching using multi-core CPUs. In: Proc. of the ACM-GIS. 2012.  605−608. [doi: 10.1145/2424321.2424428] | QMM快速算法，并行                                            |
+| [3.1.6](https://github.com/XBR-1111/MapMatching/blob/master/paper/Quick%20map%20matching%20using%20multi-core%20CPUs.pdf) | Song R, Lu W, Sun W, Huang W, Chen C. Quick map matching using multi-core CPUs. In: Proc. of the ACM-GIS. 2012.  605−608. [doi: 10.1145/2424321.2424428] | QMM快速算法，并行                                            |
 
 #### 条件随机场（Conditional Random Field， CRF）
 
@@ -74,7 +74,7 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 
 | 链接      | 引用                                                         | 备注                                   |
 | --------- | ------------------------------------------------------------ | -------------------------------------- |
-| [3.2.1]() | Hunter, T., Abbeel, P., Bayen, A.: The path inference filter: model-based low-latency map matching of probe vehicle data. IEEE Transactions on Intelligent Transportation Systems 15(2), 507–529 (2014) | online/offline，考虑限速和车辆驾驶模式 |
+| [3.2.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/The_Path_Inference_Filter_Model-Based_Low-Latency_Map_Matching_of_Probe_Vehicle_Data.pdf) | Hunter, T., Abbeel, P., Bayen, A.: The path inference filter: model-based low-latency map matching of probe vehicle data. IEEE Transactions on Intelligent Transportation Systems 15(2), 507–529 (2014) | online/offline，考虑限速和车辆驾驶模式 |
 
 ### 候选-进化模型（Candidate-Evolving Model，CEM）
 
@@ -84,7 +84,7 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 
 | 链接      | 引用                                                         | 备注 |
 | --------- | ------------------------------------------------------------ | ---- |
-| [4.1.1]() | Bonnifait, P., Laneurit, J., Fouque, C., Dherbomez, G.: Multi-hypothesis map-matching using particle filtering. In: 16th World Congress for ITS Systems and Services. pp. 1–8 (2009) |      |
+| [4.1.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/Multi-hypothesis%20map-matching%20using%20particle%20filtering.pdf) | Bonnifait, P., Laneurit, J., Fouque, C., Dherbomez, G.: Multi-hypothesis map-matching using particle filtering. In: 16th World Congress for ITS Systems and Services. pp. 1–8 (2009) |      |
 
 #### 多假设方法（Multiple Hypothesis Technique，MHT）
 
