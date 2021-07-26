@@ -32,7 +32,7 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 
 | 链接    | 引用                                                         | 备注                                                         |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [1.1]() | M. A. Quddus, W. Y. Ochieng, and R. B. Noland, “Current map-matching algorithms for transport applications: State-of-the art and future research directions,” Transp. Res. Part C Emerg. Technol., vol. 15, no. 5, pp. 312–328, 2007, doi: 10.1016/j.trc.2007.05.002. | 提出的分类标准geometric, probabilistic, topological, advanced |
+| [1.1](./Current map-matching algorithms for transport.pdf) | M. A. Quddus, W. Y. Ochieng, and R. B. Noland, “Current map-matching algorithms for transport applications: State-of-the art and future research directions,” Transp. Res. Part C Emerg. Technol., vol. 15, no. 5, pp. 312–328, 2007, doi: 10.1016/j.trc.2007.05.002. | 提出的分类标准geometric, probabilistic, topological, advanced |
 | [1.2]() | M. Hashemi and H. A. Karimi, “A critical review of real-time map-matching algorithms: Current issues and future directions,” Comput. Environ. Urban Syst., vol. 48, pp. 153–165, 2014, doi: 10.1016/j.compenvurbsys.2014.07.009. | 提出自己的分类方法，比较详细地介绍了多篇论文                 |
 | [1.3]() | 高文超,李国良,塔娜.路网匹配算法综述[J].软件学报,2018,29(02):225-250. | 问题定义、分类（基于[1]）、重点介绍HMM相关算法               |
 | [1.4]() | S.-I. Kubicka, Matej and Cela, Arben and Mounier, Hugues and Niculescu, “Comparative Study Classification of Vehicular and Application-Oriented Map-Matching Methods,” IEEE Intell. Transp. Syst. Mag., vol. 10, no. April 2018, pp. 150–166, 2018. | 从应用的角度进行分类                                         |
