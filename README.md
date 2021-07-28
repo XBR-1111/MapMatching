@@ -118,3 +118,8 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 | Global  |  [Global paper](https://github.com/XBR-1111/MapMatching/blob/master/paper/Dataset_for_testing_and_training_of_map-matching_algorithms.pdf)                                                            | [Global data](https://zenodo.org/record/57731#.YP55K8TitnI)  |
 |         |                                                              |                                                              |
 
+
+### GPS相关距离计算
+* 两点之间大圆距离
+* GPS点到路段的距离
+参考http://www.movable-type.co.uk/scripts/latlong.html
