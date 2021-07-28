@@ -119,7 +119,133 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 |         |                                                              |                                                              |
 
 
+
+## 输入输出格式（proposal）
+
+### 输入原子文件格式定义
+
+| 文件名      | 内容                                             | 例子                                                         |
+| ----------- | ------------------------------------------------ | ------------------------------------------------------------ |
+| xxx.geo     | GPS samples & Vertexes of Road Network           | geo_id, type(Point), coordinates                             |
+| xxx.usr     | user information(用于支持同一路网中匹配多条轨迹) | usr_id                                                       |
+| xxx.rel     | road networks                                    | rel_id, type(geo), origin_id(geo_id), destination_id(geo_id) |
+| xxx.dyna    | trajectory                                       | dyna_id,type(trajectory),time,entity_id(usr_id),location(geo_id), |
+| config.json |                                                  |                                                              |
+
+#### xxx.geo
+
+包括GPS samples & Vertexes of Road Network
+
+```
+geo_id,type,coordinate
+0,Point,"[-74.00313913822173,40.73359624463057]"
+1,Point,"[-74.00612949321742,40.73581439418978]"
+....
+```
+
+#### xxx.usr
+
+若仅含有一条轨迹，则user_id只有1个人，否则user_id有多个人
+
+```
+usr_id
+0
+```
+
+#### xxx.rel
+
+用于表示路网的边，其中origin_id,destination_id表示xxx.geo中的Vertexes of Road Network。若道路双向通行，则应该包括两行。
+
+```
+rel_id,type,origin_id,destination_id
+0,geo,0,1
+1,geo,1,0
+...
+```
+
+#### xxx.dyna
+
+轨迹，其中location表示xxx.geo中的GPS samples，entity_id代表xxx.usr中的usr_id。推荐以entity_id为主关键字，time为第二关键字排序。
+
+```
+dyna_id,type,time,entity_id,location
+0,trajectory,2012-04-03T14:00:09Z,0,2388
+1,trajectory,2012-04-03T14:00:25Z,1,3921
+2,trajectory,2012-04-03T14:02:24Z,2,20328
+3,trajectory,2012-04-03T14:02:41Z,3,15114
+4,trajectory,2012-04-03T14:03:00Z,4,23550
+5,trajectory,2012-04-03T14:04:00Z,5,10589
+6,trajectory,2012-04-03T14:04:38Z,6,6365
+...
+```
+
+#### config.json
+
+样例如下
+
+```
+{
+    "geo":{
+        "including_types":[
+            "Point"
+        ],
+        "Point":{}
+    },
+    "usr":{
+        "properties":{}
+    },
+    "rel":{
+        "including_types":[
+            "geo"
+        ],
+        "geo":{}
+    },
+    "dyna":{
+        "including_types":[
+            "trajectory"
+        ],
+        "trajectory":{
+            "entity_id":"usr_id",
+            "location": "geo_id",
+        }
+    },
+    "info": {
+        
+  	}
+}
+```
+
+### 输出格式定义
+
+#### xxx.out
+
+对于每一个GPS sample，需要一条路网与之对应，因而可定义与dyna_id对应的输出格式。
+
+```
+dyna_id,rel_id
+0,2724
+1,3419
+2,341
+...
+```
+
+### 扩展性说明
+
+1. 对于轨迹数据，可选输入（如速度(speed)和方向(heading)）在dyna文件中添加相关的列用以说明
+2. 对于路网数据，可选输入（如路段限速 in ST-Matching）在rel文件中添加相关的列用以说明
+3. 对于输出数据，可选输出GPS矫正后位于路段上的地理坐标，可在输出文件中加入coordinate列
+
+
+
+## 评价指标
+
+用于构建模型时检验算法能否达到预期
+
+## 相关技术参考
+
 ### GPS相关距离计算
+
 * 两点之间大圆距离
 * GPS点到路段的距离
-参考http://www.movable-type.co.uk/scripts/latlong.html
+* 参考http://www.movable-type.co.uk/scripts/latlong.html
+
