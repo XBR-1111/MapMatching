@@ -102,11 +102,17 @@ Given a road network G(V, E) and a trajectory Tr, the map-matching find a route 
 | --------- | ------------------------------------------------------------ | -------------- |
 | [5.1.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/Matching%20GPS%20observations%20to%20locations%20on%20a%20digital%20map.pdf) | J. S. Greenfeld, “Matching GPS Observations to Locations on a Digital Map,” Transp. Res. Board, no. 3, p. 13, 2002. | 拓扑方法，高引 |
 
-模糊逻辑（Fuzzy Logic）
+#### 模糊逻辑（Fuzzy Logic）
 
 | 链接      | 引用                                                         | 备注                         |
 | --------- | ------------------------------------------------------------ | ---------------------------- |
 | [5.2.1](https://github.com/XBR-1111/MapMatching/blob/master/paper/A%20High%20Accuracy%20Fuzzy%20Logic%20Based%20Map%20Matching%20Algorithm%20for%20Road%20Transport.pdf) | O. W. Y. Quddus M A, Noland R B, “A high accuracy fuzzy logic based map matching algorithm for road transport,” J. Intell. Transp. Syst., vol. 10, pp. 103–115, 2006. | 模糊逻辑，输入包括方向和速度 |
+
+## 计划实现的模型
+1. S-Matching（ST-Matching忽略Temporal） 稳定健壮，实用性强，有成熟的研究和开源实现，可参考[python实现](https://github.com/xialeizhou/ST-matching)
+2. IVMM 基于ST-Matching，效果好于ST-Matching，可参考[python实现](https://github.com/easysam/IVMM)
+3. HMMM 从HMM角度出发的模型，可参考[python实现](https://github.com/caochuntu/KDD2021_guizu/tree/main/Map%20Matching)
+
 
 ## 数据集
 
