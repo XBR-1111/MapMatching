@@ -3,7 +3,7 @@ from code.pipeline.json_to_atom_files import map2atom, trajectory2atom
 from code.util.util import ensure_dir
 from code.pipeline.atom_to_json import map2json, trajectory2json, output2json
 import json
-
+import os
 
 def to_atom(config):
     """
@@ -56,5 +56,5 @@ def atom2json(config):
     """
     step3: generate output
     """
-    output2json(config)
-    return 0
+    if os.path.exists('./data/atom_data/' + config.get('atom_file', '') + '/' + config.get('atom_file', '') + '.out'):
+        output2json(config)
