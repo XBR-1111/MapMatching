@@ -1,0 +1,6 @@
+{
+  "map_file": "test3",
+  "trajectory_files": ["liangxi"],
+  "trajectory_extra_columns": [],
+  "extra_info" :  {"with_time": false}
+}

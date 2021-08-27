@@ -1,0 +1,31 @@
+{
+  "geo":{
+    "including_types":[
+      "Point"
+    ],
+    "Point":{}
+  },
+  "usr":{
+    "properties":{}
+  },
+  "rel":{
+    "including_types":[
+      "geo"
+    ],
+    "geo":{
+      "speed":"num"
+    }
+  },
+  "dyna":{
+    "including_types":[
+      "trajectory"
+    ],
+    "trajectory":{
+      "entity_id": "usr_id",
+      "location": "geo_id"
+    }
+  },
+  "info": {
+
+  }
+}
